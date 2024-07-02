@@ -2,340 +2,340 @@
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
+  box-sizing: border-box;
 }
+.page {
+  width: 100vw;
+  height: 100vh;
+}
+
 body {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
+
 .pera {
-  font-size: 25px;
-  margin-left: 13.2%;
-  margin-top: 60px;
+  font-size: 2vw; /* Adjust font size relative to viewport width */
+  margin-left: 17vw; /* Adjust margin left relative to viewport width */
+  margin-top: 3vh; /* Adjust margin top relative to viewport height */
   text-transform: uppercase;
   font-family: sans-serif;
-  font-weight: 600;
+  font-weight: 900;
 }
+
 .change {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 .container {
   display: grid;
-  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px;
-  grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
-  gap: 55px;
+  grid-template-rows: 12vh 12vh 12vh 12vh 12vh 12vh 12vh 12vh; /* 8% viewport height for each row */
+  grid-template-columns: 6vw 6vw 6vw 6vw 6vw 6vw 6vw 6vw 6vw 6vw 6vw; /* 8% viewport width for each column */
+  gap: 20px; /* Adjust gap size as needed */
   position: absolute;
-  margin-top: 2%;
+
   overflow: hidden;
   margin-left: 10%;
 }
 
 .item1 {
-  grid-row: 2/ 4;
-  grid-column: 1 /6;
-
+  grid-row: 2 / 4;
+  grid-column: 1 / 6;
   background-image: url("WhatsApp\ Image\ 2024-06-28\ at\ 9.48.37\ AM.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border-radius: 50px;
+  border-radius: 5vw; /* Adjusted border radius relative to viewport width */
   transition: transform 0.3s ease 0s;
 }
+
 .item1:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 
 .item2 {
-  grid-area: 2/6/3/11;
+  grid-area: 2 / 6 / 3 / 11;
   overflow: hidden;
-  border-radius: 30px;
+  border-radius: 3vw; /* Adjusted border radius relative to viewport width */
   display: flex;
   justify-content: space-between;
 }
 
 .alfa1 {
-  height: 100px;
+  width: 15vw; /* Adjusted width relative to viewport width */
+  height: 10vh; /* Adjusted height relative to viewport height */
   overflow: hidden;
-  width: 150px;
-  height: 100px;
   background-color: pink;
-  /* // 30 0 0 30// */
-  border-radius: 30px 0px 0px 30px;
+  border-radius: 3vw 0 0 3vw; /* Adjusted border radius relative to viewport width */
   text-transform: uppercase;
+  position: relative;
 }
 
 .alfa1 p {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 25%;
+  margin-top: 20%;
+  font-size: 2vh;
+  color: #fff;
+  font-weight: 800;
 }
 
 .alfa2 {
+  width: 10vw; /* Adjusted width relative to viewport width */
+  height: 10vh; /* Adjusted height relative to viewport height */
   background-image: url(Starbucks-Coffee-PNG-Transparent.png);
-
-  height: 100px;
-  overflow: hidden;
-  width: 100px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-color: white;
-  animation-name: moveup;
-  animation-duration: 3s;
-  animation-timing-function: ease-in;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-duration: normal;
+  animation: moveup 3s ease-in infinite normal;
 }
+
 @keyframes moveup {
   0% {
-    transform: translateY(-100px);
+    transform: translateY(-10vh);
   }
   50% {
-    transform: translateY(0px);
+    transform: translateY(0);
   }
   100% {
-    transform: translateY(100px);
+    transform: translateY(10vh);
   }
 }
 
 .alfa3 {
+  width: 10vw; /* Adjusted width relative to viewport width */
+  height: 10vh; /* Adjusted height relative to viewport height */
   background-image: url(square-1470943709-starbucks-strawberryjelly.jpg);
-
-  height: 100px;
-  overflow: hidden;
-  width: 100px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  animation-name: movedown;
-  animation-duration: 3s;
-  animation-timing-function: ease-in;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-duration: normal;
+  animation: movedown 3s ease-in infinite normal;
 }
+
 @keyframes movedown {
   0% {
-    transform: translateY(100px);
+    transform: translateY(10vh);
   }
-  /* 50% {
-    transform: translateY(0px);
-  } */
   100% {
-    transform: translateY(-100px);
+    transform: translateY(-10vh);
   }
 }
 
 .alfa4 {
+  width: 10vw; /* Adjusted width relative to viewport width */
+  height: 10vh; /* Adjusted height relative to viewport height */
   background-image: url(starbucks-coffee-cup-paper-YaKzvY4-600.jpg);
-
-  height: 100px;
-  overflow: hidden;
-  width: 100px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  animation-name: moveup;
-  animation-duration: 3s;
-  animation-timing-function: ease;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-duration: normal;
+  animation: moveup 3s ease infinite normal;
 }
+
 .alfa5 {
+  width: 10vw; /* Adjusted width relative to viewport width */
+  height: 10vh; /* Adjusted height relative to viewport height */
   background-image: url(starbucks-logo1.jpg);
-
-  height: 100px;
-  overflow: hidden;
-  width: 100px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  animation-name: movedown;
-  animation-duration: 3s;
-  animation-timing-function: ease-in;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-duration: normal;
+  animation: movedown 3s ease-in infinite normal;
 }
-.item3 {
-  grid-area: 4/4/6/1;
 
-  background-image: url(WhatsApp\ Image\ 2024-06-28\ at\ 9.45.56\ AM.jpeg);
+.item3 {
+  grid-area: 4 / 4 / 6 / 1;
+  background-image: url("WhatsApp\ Image\ 2024-06-28\ at\ 9.45.56\ AM.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border-radius: 50px;
+  border-radius: 5vw; /* Adjusted border radius relative to viewport width */
   transition: transform 0.3s ease 0s;
 }
+
 .item3:hover {
   transform: scale(1.1);
 }
+
 .item3 p {
-  font-size: 26px;
+  font-size: 1.6vw; /* Adjusted font size relative to viewport width */
   text-transform: capitalize;
-  font-weight: 400;
-  margin-left: 10%;
-  margin-top: 5%;
-  font-family: sans-serif;
+  font-weight: 800;
+  margin-left: 1vw; /* Adjusted margin relative to viewport width */
+  margin-top: 4vh; /* Adjusted margin relative to viewport height */
+
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .item4 {
-  grid-area: 4/4/6/7;
-
+  grid-area: 4 / 4 / 6 / 7;
   background-image: url(Old-Fashioned_Grilled_Cheese_and_Turkey_Pesto_Panini-1200x800.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
-  border-radius: 50px;
+  border-radius: 5vw; /* Adjusted border radius relative to viewport width */
   background-color: pink;
-
   transition: transform 0.3s ease 0s;
 }
+
 .item4:hover {
   transform: scale(1.1);
 }
+
 .item4 p {
-  font-size: 26px;
+  font-size: 1.6vw; /* Adjusted font size relative to viewport width */
   text-transform: capitalize;
-  font-weight: 400;
-  margin-left: 10%;
-  margin-top: 5%;
-  font-family: sans-serif;
+  font-weight: 800;
+  margin-left: 1vw; /* Adjusted margin relative to viewport width */
+  margin-top: 4vh; /* Adjusted margin relative to viewport height */
+
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .item5 {
-  grid-area: 3/7/6/9;
+  grid-area: 3 / 7 / 6 / 9;
   transition: transform 0.3s ease 0s;
-  background-image: url(WhatsApp\ Image\ 2024-06-28\ at\ 9.45.55\ AM.jpeg);
+  background-image: url("WhatsApp\ Image\ 2024-06-28\ at\ 9.45.55\ AM.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border-radius: 50px;
+  border-radius: 5vw; /* Adjusted border radius relative to viewport width */
 }
+
 .item5:hover {
   transform: scale(1.1);
 }
+
 .item5 p {
-  font-size: 26px;
+  font-size: 1.6vw;
   text-transform: capitalize;
-  font-weight: 400;
-  margin-left: 10%;
-  margin-top: 5%;
-  font-family: sans-serif;
+  font-weight: 800;
+  margin-left: 1vw;
+  margin-top: 4vh;
+
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .item6 {
-  grid-area: 3/9 /6/11;
+  grid-area: 3 / 9 / 6 / 11;
   transition: transform 0.3s ease 0s;
   background-image: url(WhatsApp\ Imag.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border-radius: 50px;
+  border-radius: 5vw; /* Adjusted border radius relative to viewport width */
 }
 
 .item6:hover {
   transform: scale(1.1);
 }
+
 .item6 p {
-  font-size: 26px;
+  font-size: 1.6vw; /* Adjusted font size relative to viewport width */
   text-transform: capitalize;
-  font-weight: 400;
-  margin-left: 10%;
-  margin-top: 5%;
-  font-family: sans-serif;
+  font-weight: 800;
+  margin-left: 1vw; /* Adjusted margin relative to viewport width */
+  margin-top: 4vh; /* Adjusted margin relative to viewport height */
+
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .item7 {
-  grid-area: 6 /1/8/7;
+  grid-area: 6 / 1 / 8 / 7;
   transition: transform 0.3s ease 0s;
-  background-image: url(WhatsApp\ Image\ 2024-06-28\ at\ 9.49.51\ AM.jpeg);
+  background-image: url("WhatsApp\ Image\ 2024-06-28\ at\ 9.49.51\ AM.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border-radius: 50px;
+  border-radius: 5vw; /* Adjusted border radius relative to viewport width */
 }
 
 .item7:hover {
   transform: scale(1.1);
 }
+
 .item7 p {
-  font-size: 26px;
+  font-size: 1.6vw; /* Adjusted font size relative to viewport width */
   text-transform: capitalize;
-  font-weight: 400;
-  margin-top: 5%;
-  margin-left: 10%;
-  font-family: sans-serif;
-  color: aliceblue;
+  font-weight: 800;
+  margin-left: 1vw; /* Adjusted margin relative to viewport width */
+  margin-top: 4vh; /* Adjusted margin relative to viewport height */
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 .item8 {
-  grid-area: 8/7/6/9;
+  grid-area: 8 / 7 / 6 / 9;
   transition: transform 0.3s ease 0s;
-  background-image: url(WhatsApp\ Image\ 2024-06-28\ .jpeg);
+  background-image: url("WhatsApp\ Image\ 2024-06-28\ .jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border-radius: 50px;
+  border-radius: 5vw; /* Adjusted border radius relative to viewport width */
 }
 
 .item8:hover {
   transform: scale(1.1);
 }
+
 .item8 p {
-  font-size: 26px;
+  font-size: 1.6vw; /* Adjusted font size relative to viewport width */
   text-transform: capitalize;
-  font-weight: 400;
-  margin-left: 10%;
-  margin-top: 5%;
-  font-family: sans-serif;
+  font-weight: 800;
+  margin-left: 1vw; /* Adjusted margin relative to viewport width */
+  margin-top: 4vh; /* Adjusted margin relative to viewport height */
+
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .item9 {
-  grid-area: 8 /11/6/9;
+  grid-area: 8 / 11 / 6 / 9;
   transition: transform 0.3s ease 0s;
   background-image: url(Wha.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  border-radius: 50px;
+  border-radius: 5vw; /* Adjusted border radius relative to viewport width */
 }
+
 .item9:hover {
   transform: scale(1.1);
 }
+
 .item9 p {
-  font-size: 26px;
+  font-size: 1.6vw; /* Adjusted font size relative to viewport width */
   text-transform: capitalize;
-  font-weight: 400;
-  margin-left: 10%;
-  margin-top: 5%;
-  font-family: sans-serif;
+  font-weight: 800;
+  margin-left: 1vw; /* Adjusted margin relative to viewport width */
+  margin-top: 4vh; /* Adjusted margin relative to viewport height */
+  font-family: Arial, Helvetica, sans-serif;
 }
 #page3 {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 }
+
 .top {
-  height: 40%;
-  width: 100%;
-  border-radius: 50px;
+  height: 45vh;
+  width: 100vw;
+  border-radius: 5vw; /* Adjusted border radius relative to viewport width */
   overflow: hidden;
 }
+
 .greenbox {
   display: flex;
-  margin-top: 40px;
+  margin-top: 4vh; /* Adjusted margin using vh */
   overflow: hidden;
-  border-radius: 50px;
-  margin-left: 2%;
-  margin-right: 2%;
+  border-radius: 5vw; /* Adjusted border radius relative to viewport width */
+  margin-left: 2vw; /* Adjusted margin using vw */
+  margin-right: 2vw; /* Adjusted margin using vw */
   background-color: #035803;
 }
+
 .btn {
   display: flex;
 }
@@ -343,32 +343,33 @@ body {
 .btn button {
   background-color: transparent; /* Transparent background */
   border: 1px solid white; /* 1px white border */
-  /* color: white; /* White text */
-  padding: 7px 6px; /* Padding for button */
+  padding: 1vh 0.8vw; /* Padding using vh and vw units */
   cursor: pointer; /* Pointer cursor on hover */
-  font-size: 16px; /* Font size for text */
+  font-size: 1vw; /* Font size using vw */
   transition: background-color 0.3s, color 0.3s;
-  border-radius: 25px;
+  border-radius: 2.5vw; /* Adjusted border radius using vw */
   color: #fff;
   justify-content: space-between;
-  margin-left: 50px;
+  margin-left: 2vw; /* Adjusted margin using vw */
   text-transform: capitalize;
-  margin-bottom: 4%;
+  margin-bottom: 4vh; /* Adjusted margin using vh */
 }
+
 .giftcard {
   height: 39.2vh;
-  width: 50%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
+
 .giftcard h3 {
   color: #fff;
-  width: -50%;
   font-weight: 800;
-  font-size: 30px;
+  font-size: 3vw; /* Font size using vw */
 }
+
 .giftcard p {
   color: #fff;
 }
@@ -376,13 +377,14 @@ body {
 .cards {
   display: flex;
 }
+
 .card {
   flex: 0 0 18vw;
-  margin: 0 10px;
+  margin: 0 1vw; /* Adjusted margin using vw */
   background-color: white;
   border: 1px solid #ddd;
-  border-radius: 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 3vw; /* Adjusted border radius using vw */
+  box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.1); /* Adjusted box shadow using vw */
   overflow: hidden;
   animation-name: moveleft;
   animation-duration: 2s;
@@ -390,27 +392,30 @@ body {
   animation-delay: 0s;
   animation-iteration-count: infinite;
 }
+
 .part-1 {
   position: relative;
-  padding: 10px;
+  padding: 1vh;
   height: 30vh;
   background-color: rgb(248, 248, 248);
   border: 1px solid black;
-  margin: 20px 20px;
-  border-radius: 20px;
+  margin: 2vh 2vw; /* Adjusted margin using vh and vw */
+  border-radius: 2vw; /* Adjusted border radius using vw */
 }
+
 .sec2 {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 40vh;
-  width: 100%;
+  width: 100vw;
   margin: 0;
   background-color: #035803;
 }
+
 #square {
-  width: 500px;
-  height: 1000px;
+  width: 50vw;
+  height: 100vh;
   background: #90ee90;
 }
 
@@ -419,10 +424,11 @@ body {
   height: min-content;
   width: min-content;
 }
+
 .circle {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 2vw; /* Adjusted width using vw */
+  height: 2vw; /* Adjusted height using vw */
   background-color: black;
   border-radius: 50%;
   transition: width 0.2s ease, height 0.2s ease;
@@ -433,20 +439,19 @@ body {
 .section {
   display: flex;
   flex-direction: column;
-  margin: 0 10px;
-
+  margin: 0 1vw; /* Adjusted margin using vw */
   overflow: hidden;
-  height: 300px; /* Adjust as needed */
-  width: 450px; /* Adjust as needed */
+  height: 40vh; /* Adjusted height using vh */
+  width: 20vw; /* Adjusted width using vw */
   position: relative;
   justify-content: space-between;
 }
 
 .section img {
-  width: 400px;
-  height: 400px; /* Adjust as needed */
+  width: 50vh; /* Adjusted width using vw */
+  height: 10vw; /* Adjusted height using vw */
   object-fit: cover;
-  padding: 5%;
+  /* Adjusted padding using vw */
 }
 
 @keyframes scroll-up {
@@ -478,9 +483,11 @@ body {
 .section img:nth-child(1) {
   animation-delay: 0s;
 }
+
 .section img:nth-child(2) {
   animation-delay: 3s;
 }
+
 .section img:nth-child(3) {
   animation-delay: 6s;
 }
